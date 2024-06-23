@@ -63,12 +63,88 @@
             font-size: 3rem;
         }
         .rightsection img{
+            border-radius: 50%;
             width: 80%;
+            height: 300px;
             margin: 40px 0;
+        }
+
+        .rightsection img:hover{
+            
+            transform: scale(1.25);
         }
         .purple{
             color: blueviolet;
         }
+        .secondsection{
+            width: 40%;
+            /* margin: auto; */
+            background-color: rgb(11, 23, 65);
+            border: 5px solid rgb(131, 29, 29);
+            margin-left: 150px;
+            
+        }
+
+        .secondsection h1{
+            color: rosybrown;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+        .secondsection div{
+           
+            font-size: 20px;
+            margin: 20px;
+            font-weight: bold;
+            font-style: oblique;
+        }
+        
+        .secondsection a{
+            text-decoration: none;
+            color: rgb(39, 134, 165);
+        }
+        .profiles{
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 300px;
+        }
+        .sectionthird h1{
+             color: rosybrown;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .sectionthird{
+            width:40%;
+            /* margin: auto; */
+            margin-left:300px;
+            color:  rgb(39, 134, 165);
+            font-style: oblique;
+            font-weight: bold;
+            background-color: rgb(11, 23, 65);
+            border: 5px solid rgb(131, 29, 29);
+            /* margin-left: 100px; */
+            
+        }
+
+        .copyright{
+
+            margin-left: 30px;
+        }
+        .HTML{
+            margin-left: 5px;
+        }
+        .CSS{
+            margin-left: 5px;
+        }
+        .JAVASCRIPT{
+            margin-left: 10px;
+        }
+        .SQL{
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -96,13 +172,48 @@
             <div class="leftsection">
                 Hey! My name is <span class="purple">Mohit Bora</span> 
                 <div>
-                   and I am a passionate web developer
+                   and I am a passionate 
                 </div>
+                <span id="element"></span>
             </div>
             <div class="rightsection">
-                <img src="Designer.png" alt="">
+                <img src="circular-Photoroom.png" alt="">
             </div>
         </section>
+        <div class="profiles">
+
+            <section class="secondsection">
+                
+                <h1>Coding Profiles: </h1>
+                <br>
+                <div class="lc"> <a href="https://leetcode.com/u/Mohit_Bora/" target="_blank">* LeetCode Profile</a></div>
+                <div class="gfg"><a href="https://www.geeksforgeeks.org/user/boramohit3/" target="_blank">* Geeks For Geeks</a></div>
+            </section>
+
+            <section class="sectionthird">
+                <h1>Skill Set: </h1>
+                <br>
+                <div class="c"><img src="C++.png" height="40px" alt="C++"></div>
+                <div class="HTML"><img src="html.png" height="40px" alt="HTML"></div>
+                <div class="CSS"><img src="CSS.png" height="45px" alt="CSS"></div>
+                <div class="JAVASCRIPT"><img src="JS.png" height="40px" width="30px" alt=""></div>
+                <div class="SQL"><img src="sql.png" height="40px" alt=""></div>
+            </section>
+        </div>
     </main>
+
+    <footer class="copyright">
+        <div class="address">
+            <h1>FeedBack</h1>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+    var typed = new Typed('#element', {
+      strings: ['<i> Web Developer</i> .', '&amp; a Problem Solver.'],
+      typeSpeed: 80,
+      
+    });
+  </script>
 </body>
 </html>
